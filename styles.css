@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+p {
+    font-size: 14px;
+}
+
+h3 {
+    font-size: 18px;
+}
+
+h5 {
+    font-size: 12px;
+    text-align: center;
+}
+
+.container {
+    padding: .8em;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.row {
+    flex-direction: row;
+    height: 75vh;
+}
+
+.col {
+    flex-direction: column;
+}
+
+.flex-center {
+    justify-content: center;
+}
+
+
+.title {
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: .5em;
+}
+
+
+.role {
+    width: 25%;
+    border-radius: 6px;
+    padding: 1.2em;
+}
+
+.role-img {
+    width: 20%;
+    display: block;
+    margin: auto;
+}
+
+.role-title {
+    margin-top: 1em;
+    text-align: center;
+    padding: .5em;
+    border-radius: 4px;
+    margin-bottom: 1em;
+}
+
+.role-desc {
+    margin-bottom: .5em;
+}
+
+.purple {
+    color: #845EC2;
+}
+
+.dk-purple {
+    color: #9B89B3;
+}
+
+.lt-purple {
+    color: #FEF7FF;
+}
+
+.light {
+    color: #FEFEDF;
+}
+
+.bkg-purple {
+    background-color: #845EC2;
+}
+
+.bkg-dk-purple {
+    background-color: #9B89B3;
+}
+
+.bkg-lt-purple {
+    background-color: #FEF7FF;
+}
+
+.bkg-light {
+    background-color: #FEFEDF;
+}
