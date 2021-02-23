@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles.css">
+    <title>D. Engineer - Roles en Datos</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <a class="nav-item" href="../index.html">Inicio</a>
+            <a class="nav-item" href="views/data_eng.html">D. Engineer</a>
+        </nav>
+    </header>
+    <div class="container">
+        <div class="title-container">
+            <h1 class="title dk-purple">Data Engineer</h1>
+        </div>
+        <div class="container">
+            <div class="function">
+                <div class="fn-left">
+                    <h3>Crea Datapipelines</h3>
+                    <img src="../img/data_pipeline.jpg" alt="">
+                    <small>Imagen de: https://opendata-airflow-tutorial.readthedocs.io/en/latest/pipelines.html</small>
+                    <div class="fn-left-tools">
+                        <!-- <h4>Herramientas</h4> -->
+                        <img src="../img/azure_dpipeline.jpg" alt="">
+                        <small>Azure Data pipeline.</small>
+                        <img src="../img/hadoop_pipeline.jpg" alt="">
+                        <small>Hadoop Data pipeline.</small>
+                    </div>
+                </div>
+                <div class="fn-right">
+                    <p>Es una serie de pasos de <strong>procesamiento de datos</strong>. Si los datos no se cargan 
+                        directamente en la plataforma de datos, se ingieren al comienzo del pipeline. Luego, hay 
+                        una serie de pasos en los que cada paso entrega una salida, que es la entrada al siguiente 
+                        paso. Esto continúa hasta que se completa el pipeline.
+                    </p>
+                    <p>Para comprender cómo funciona un data pipeline, piensa en cualquier pipeline 
+                        que reciba algo de una fuente y lo lleve a un destino. Lo que sucede con los datos a lo 
+                        largo del camino depende del caso de uso comercial y del destino en sí. Un data pipeline 
+                        puede ser un proceso simple de extracción y carga de datos, o puede estar diseñado para 
+                        manejar datos de una manera más avanzada, como entrenar conjuntos de datos para el 
+                        aprendizaje automático. Los elementos del data pipeline son:
+                    </p>
+                    <p>
+                        <strong>Fuente</strong>: Pueden incluir bases de datos relacionales y datos de 
+                        aplicaciones SaaS. La mayoría de los pipelines ingieren datos sin procesar de varias 
+                        fuentes a través de un mecanismo de ingesta, una llamada a la API, un motor de replicación 
+                        que extrae datos a intervalos regulares o un webhook. Además, los datos se pueden sincronizar 
+                        en tiempo real o en intervalos programados.
+                    </p>
+                    <p>    
+                        <strong>Destino</strong>: un destino puede ser un Data Warehouse, local o basado en la nube, 
+                        un Data Lake o Data Mart, o puede ser una aplicación de análisis o BI.
+                    </p>
+                    <p>    
+                        <strong>Transformación</strong>: Refiere a las operaciones que cambian los 
+                        datos, estas son: estandarización, clasificación, deduplicación, validación y verificación 
+                        de datos. El objetivo final es posibilitar el análisis de los datos.
+                    </p>
+                    <p>    
+                        <strong>Procesamiento</strong>: hay dos modelos de ingesta de datos: procesamiento por 
+                        lotes (batch), en el que los datos de origen se recopilan periódicamente y se envían al 
+                        sistema de destino, y procesamiento de flujo (stream), en el que los datos se obtienen, 
+                        manipulan y cargan tan pronto como se crean.
+                    </p>
+                    <p>    
+                        <strong>Flujo de trabajo</strong>: Implica la gestión de la secuencia y la dependencia 
+                        de los procesos. Las dependencias del flujo de trabajo pueden ser técnicas o comerciales.
+                    </p>
+                    <p> <strong>Supervisión</strong>: Los data pipelines deben tener un componente de supervisión para 
+                        garantizar la integridad de los datos. Los posibles escenarios de falla incluyen 
+                        la congestión de la red o un origen o destino fuera de línea. El pipeline debe incluir 
+                        un mecanismo que alerta a los administradores sobre tales escenarios.
+                    </p>
+                </div>
+            </div>
+            <div class="function">
+                <div class="fn-left">
+                    <h3>Integra</h3>
+                        <img src="https://2.bp.blogspot.com/-LhyoCiRyjxc/Xl_nyu6KZEI/AAAAAAAATrs/2tGY-fRMaAAAHQSAKBYmZecDhSJDnQpCwCKgBGAsYHg/s1600/BigDataPipeline-Architecture.png" alt="">
+                        <small>Arquitectura Big Data</small>
+                        <div class="fn-left-tools">
+                            <!-- <h4>Herramientas</h4> -->
+                            <img src="../img/data_pipeline_batch_ex.jpg" alt="">
+                            <small>Ejemplo de Batch Data pipeline.</small>
+                            <img src="../img/streaming_data_pipeline.jpg" alt="">
+                            <small>Ejemplo de Streaming Data pipeline.</small>
+                        </div>
+                </div>
+                <div class="fn-right">
+                    <p>Las <strong>arquitecturas de data pipeline</strong> requieren muchas consideraciones. Por ejemplo, ¿su 
+                        pipeline necesita manejar datos de transmisión? ¿Qué tasa de datos espera? ¿Cuánto y qué tipos de 
+                        procesamiento deben ocurrir en el data pipeline? ¿Los datos se 
+                        generan en la nube o on premise y adónde deben ir? ¿Planea construir el pipeline 
+                        con microservicios? ¿Existen tecnologías específicas en las que su equipo ya esté bien versado 
+                        en programación y mantenimiento?
+                    </p>
+                    <p>Hace varios años, las empresas solían tener aplicaciones en línea respaldadas por una base de datos 
+                        relacional que se usaba para almacenar usuarios y otros datos estructurados (OLTP). De la noche 
+                        a la mañana, estos datos se archivaron utilizando trabajos complejos en un Data Warehouse 
+                        optimizado para el análisis de datos y la inteligencia empresarial, <strong>OLAP</strong>. 
+                        Los datos históricos 
+                        se copiaron en el Data Warehouse con los que se generaron informes que se utilizaron para tomar 
+                        decisiones comerciales. Para <strong>OLTP</strong>, en los últimos años, hubo un cambio hacia NoSQL, utilizando 
+                        bases de datos como MongoDB o Cassandra que podrían escalar más allá de las limitaciones de las 
+                        bases de datos SQL. Sin embargo, las bases de datos recientes pueden manejar grandes cantidades 
+                        de datos y se pueden usar tanto para OLTP como para OLAP, y hacerlo a un bajo costo tanto para 
+                        el procesamiento de flujo (Streaming) como por lotes (Batch).
+                    </p>     
+                    <p>El procesamiento por lotes o <strong>Batch</strong> es donde ocurre el procesamiento de bloques de datos que ya se han 
+                        almacenado durante un período de tiempo. Funciona bien en situaciones en las que no necesita 
+                        resultados de análisis en tiempo real y cuando es más importante procesar grandes volúmenes de 
+                        datos para obtener información más detallada que para obtener resultados de análisis rápidos.
+                    </p>     
+                    <p>El procesamiento <strong>Streaming</strong> permite procesar datos en tiempo real a medida que llegan y detectar 
+                        rápidamente las condiciones en un período de tiempo reducido desde el punto de recepción de 
+                        los datos. Permite introducir datos en herramientas de análisis tan pronto como se generen y 
+                        obtener resultados de análisis instantáneos.
+                    </p>            
+                </div>
+            </div>
+            <div class="function">
+                <div class="fn-left">
+                    <h3>Usa ETL y ELT</h3>
+                        <!-- <img src="" alt="">
+                        <small>Arquitectura Big Data</small> -->
+                        <div class="fn-left-tools">
+                            <!-- <h4>Herramientas</h4> -->
+                            <img src="https://2.bp.blogspot.com/-C7mZX5Sfqh0/Xl_nyl476tI/AAAAAAAATrs/SFPBR9HQ3BsCOeMj7RmUrCsScD7mb9RDACKgBGAsYHg/s1600/BigDataPipeline-Azure.png" alt="">
+                            <small>ELT con MS Azure</small>
+                            <img src="../img/elt_data_pipeline.jpg" alt="">
+                            <small>ELT Data pipeline.</small>
+                        </div>
+                </div>
+                <div class="fn-right">
+                    <p>ETL se refiere a un tipo específico de data pipeline. ETL significa "extraer, transformar, cargar". 
+                        Es el proceso de mover datos desde una fuente, como una aplicación, a un destino, generalmente 
+                        un Data Warehouse. "Extraer" se refiere a extraer datos de una fuente; "Transformar" se trata 
+                        de modificar los datos para que se puedan cargar en el destino, y "cargar" se trata de insertar 
+                        los datos en el destino. 
+                    </p>
+                    <p>ETL se ha utilizado históricamente para cargas de trabajos Batch, especialmente a gran escala. 
+                        Pero una nueva generación de herramientas ETL Streaming está surgiendo como parte del proceso 
+                        de transmisión de datos de eventos en tiempo real.
+                    </p>
+                    <p>Los Data Warehouse basados en la nube, como Amazon Redshift, Google BigQuery, Azure SQL Data 
+                        Warehouse y Snowflake pueden escalar hacia arriba y hacia abajo en segundos o minutos, por lo 
+                        que los desarrolladores pueden replicar datos sin procesar de fuentes dispares y definir 
+                        transformaciones en SQL y ejecutarlas en el Data Warehouse después de la carga o en el momento 
+                        de la consulta.
+                    </p>
+                    <p>Extraer, Cargar y Transformar (ELT) extrae de manera similar datos de una o varias fuentes remotas, 
+                        pero luego los carga en el Data Warehouse de destino sin ningún otro formato. La transformación 
+                        de datos, en un proceso ELT, ocurre dentro de la base de datos de destino. ELT pide menos a las 
+                        fuentes remotas, requiriendo solo sus datos brutos y no preparados.
+                    </p>
+                    <p>
+                        La elección de ETL o ELT para un caso de uso de gestión de datos depende principalmente de tres 
+                        factores: las tecnologías de almacenamiento principales, la arquitectura de almacenamiento de 
+                        datos y la aplicación de almacenamiento de datos para el negocio. La principal ventaja de usar 
+                        un enfoque ELT es que se pueden mover todos los datos sin procesar de una multitud de fuentes a 
+                        un único repositorio unificado (Data Lake) y tener acceso ilimitado a todos los 
+                        datos en cualquier momento. Se puede trabajar de forma más flexible y facilita el almacenamiento 
+                        de datos nuevos y no estructurados. En general, ELT es un proceso económico, ya que requiere 
+                        menos recursos y menos tiempo para consultas. Sin embargo, si el sistema de destino no es lo 
+                        suficientemente robusto para ELT, ETL será una opción más adecuada.  
+                    </p>            
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    <footer>
+        <h5 class="dk-purple">By María Noelia Avalos - 2021</h5>
+        <!-- <h5 class="dk-purple">ln:/m-noelia-avalos</h5> -->
+    </footer>
+    
+</body>
+</html>
