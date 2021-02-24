@@ -8,7 +8,8 @@ body {
 }
 
 header {
-    height: 10vh;
+    height: 12vh;
+    padding-top: .5em;
     display: flex;
     background-color: #845EC2;
     position: fixed;
@@ -50,6 +51,7 @@ nav {
 .nav-item:hover::after {
     width: 100%;
 }
+
 
 .title-container {
     display: flex;
@@ -119,6 +121,14 @@ h5 {
     padding: .8em;
     border-radius: 12px;
     background-color: #9f9dff26;
+}
+
+.nav-img {
+    width: 55%;
+    filter: drop-shadow(0px 0px 0px #bbab90);
+    padding: .3em;
+    box-shadow: inset 0px 0px 2px 1px #9f9dff;
+    border-radius: 6px;
 }
 
 .role-img:hover {
@@ -278,6 +288,7 @@ footer {
 
 /* media queries */
 @media only screen and (min-width: 374px) {
+   
     nav {
         width: 90%;
     }
@@ -285,6 +296,8 @@ footer {
 }
 
 @media only screen and (min-width: 426px) {
+
+
     .mobile-nav {
         width: 60%;
     }
@@ -295,6 +308,11 @@ footer {
 }
 
 @media only screen and (min-width: 769px) {
+    header {
+        height: 10vh;
+        padding-top: 0em;
+    }
+    
     nav {
         display: flex;
         justify-content: space-evenly;
