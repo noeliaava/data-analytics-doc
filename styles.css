@@ -17,8 +17,11 @@ header {
 }
 
 nav {
+    display: none;
+}
+
+.mobile-nav {
     display: flex;
-    width: 80%;
     justify-content: space-evenly;
     align-items: center;
     margin: auto;
@@ -30,6 +33,7 @@ nav {
     text-align: center;
     font-weight: 600;
     text-decoration: none;
+    font-size: 1em;
 }
 
 .title-container {
@@ -97,7 +101,7 @@ h5 {
 .role-title {
     margin-top: 1em;
     text-align: center;
-    padding: .5em;
+    padding: .8em;
     border-radius: 4px;
     margin-bottom: 1em;
     box-shadow: 0px 0px 5px 2px #868686;
@@ -124,6 +128,7 @@ h5 {
     color: #9B89B3;
     text-align: center;
     font-size: 1.4em;
+    text-transform: uppercase;
 }
 
 .fn-left {
@@ -209,20 +214,33 @@ footer {
 /* media queries */
 @media only screen and (min-width: 374px) {
     nav {
-        width: 50%;
+        width: 90%;
     }
 
 }
 
 @media only screen and (min-width: 426px) {
-    nav {
-        width: 70%;
+    .mobile-nav {
+        width: 60%;
+    }
+
+    .role-head {
+        height: 40vh;
     }
 }
 
 @media only screen and (min-width: 769px) {
     nav {
-        width: 20%;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        margin: auto;
+        width: 70%;
+        margin-left: 30%;
+    }
+
+    .mobile-nav {
+        display: none;
     }
 
     .card-container {
