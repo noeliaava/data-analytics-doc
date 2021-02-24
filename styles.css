@@ -22,9 +22,10 @@ nav {
 
 .mobile-nav {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: center;
     margin: auto;
+    width: 95%;
 }
 
 .nav-item {
@@ -88,7 +89,7 @@ h5 {
 }
 
 .role-head {
-    height: 25vh;
+    height: 30vh;
     margin-bottom: 1em;
 }
 
