@@ -14,6 +14,7 @@ header {
     position: fixed;
     width: 100%;
     box-shadow: 0px 0px 2px 3px #888888;
+    z-index: 1;
 }
 
 nav {
@@ -37,10 +38,24 @@ nav {
     font-size: 1em;
 }
 
+.nav-item::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 3px;
+    background: #fff;
+    transition: width .3s;
+}
+
+.nav-item:hover::after {
+    width: 100%;
+}
+
 .title-container {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 1em;
     padding-top: 5em;
 }
 
@@ -86,10 +101,12 @@ h5 {
     border-radius: 6px;
     padding: 1.2em;
     margin-bottom: 1em;
+    box-shadow: 0 0 10px 0px #bfbebe;
+    
 }
 
 .role-head {
-    height: 30vh;
+    height: 35vh;
     margin-bottom: 1em;
 }
 
@@ -97,22 +114,50 @@ h5 {
     width: 25%;
     display: block;
     margin: auto;
+    filter: drop-shadow(3px 4px 1px #bbab90);
+    box-shadow: inset 0px 0px 4px 2px #9f9dff;
+    padding: .8em;
+    border-radius: 12px;
+    background-color: #9f9dff26;
+}
+
+.role-img:hover {
+    transform: rotateY(360deg);
+    transition: 1.1s ease-in;
+}
+
+.role-link {
+    text-decoration: none;
+}
+
+.role-title:hover {
+    background-color: #E8D5B5;
+    transition: .6s ease-in-out;
 }
 
 .role-title {
     margin-top: 1em;
     text-align: center;
-    padding: .8em;
+    padding: .7em;
     border-radius: 4px;
     margin-bottom: 1em;
-    box-shadow: 0px 0px 5px 2px #868686;
+    box-shadow: 0px 0px 4px 2px #dad6bf;
+    background-color: #9F9DFF;
+    text-transform: uppercase;
+    letter-spacing: .5pt;
 }
 
 .role-desc {
     margin-bottom: .5em;
 }
 
+
 /* =========== funciones en detalle =========== */
+
+.role-t {
+    width: 90%;
+    text-align: center;
+}
 
 .function {
     display: flex;
@@ -121,14 +166,22 @@ h5 {
     align-items: center;
     width: 90%;
     margin: auto;
-    margin-bottom: 2em;
+    margin-bottom: 1em;
+    box-shadow: inset 0px -2px 4px 2px #9f9dff;
+    padding: 2em .8em 1em .8em;
 }
 
 .function-title {
-    margin-bottom: 1em;
-    color: #9B89B3;
-    text-align: center;
-    font-size: 1.4em;
+    background-color: #9f9dff;
+    border: 8px solid #9f9dff;
+    box-shadow: 0px -1px 3px 2px #9f9dff;
+    color: white;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: .3em;
+    width: 90%;
+    margin: auto;
     text-transform: uppercase;
 }
 
@@ -175,35 +228,35 @@ small {
 }
 
 .purple {
-    color: #845EC2;
+    color: #9F9DFF;
 }
 
 .dk-purple {
-    color: #9B89B3;
-}
-
-.lt-purple {
-    color: #FEF7FF;
+    color: #575491;
 }
 
 .light {
-    color: #FEFEDF;
+    color: #fffade85;
+}
+
+.wh {
+    color: white;
 }
 
 .bkg-purple {
-    background-color: #845EC2;
+    background-color: #9F9DFF;
 }
 
 .bkg-dk-purple {
-    background-color: #9B89B3;
-}
-
-.bkg-lt-purple {
-    background-color: #FEF7FF;
+    background-color: #575491;
 }
 
 .bkg-light {
-    background-color: #FEFEDF;
+    background-color: #fffade85;
+}
+
+.bkg-wh {
+    background-color: white;
 }
 
 .soon-text {
@@ -220,7 +273,7 @@ small {
 
 footer {
     height: 5vh;
-    margin-top: 5em;
+    margin-top: 1em;
 }
 
 /* media queries */
@@ -237,7 +290,7 @@ footer {
     }
 
     .role-head {
-        height: 40vh;
+        height: 45vh;
     }
 }
 
@@ -266,6 +319,10 @@ footer {
         height: 95vh;
     }
 
+    .role-t {
+        text-align: left;
+    }
+
     .two {
         height: 95vh;
     }
@@ -286,8 +343,10 @@ footer {
 
     .fn-right {
         width: 50%;
-        /* margin: auto; */
+        margin: auto;
         align-self: flex-start;
+        margin-top: 1em;
+        margin-bottom: 1em;
     }
 }
 
