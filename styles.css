@@ -354,11 +354,11 @@ footer {
     .role {
         width: 28%;
         margin: auto;
-        height: 105vh;
+        height: 110vh;
     }
 
     .two {
-        height: 100vh;
+        height: 105vh;
     }
 
     .role-title {
@@ -371,16 +371,6 @@ footer {
 }
 
 @media only screen and (min-width: 1332px) {
-    .card-container {
-        height: 120vh;
-    }
-    .role {
-        height: 110vh;
-    }
-    .two {
-        height: 105vh;
-    }
-    .role-head {
-        height: 35vh;
-    }
+
+   
 }
