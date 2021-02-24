@@ -290,7 +290,7 @@ footer {
     }
 
     .role-head {
-        height: 35vh;
+        height: 45vh;
     }
 }
 
@@ -325,6 +325,10 @@ footer {
 
     .two {
         height: 90vh;
+    }
+
+    .role-head {
+        height: 35vh;
     }
 
     .function {
