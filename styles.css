@@ -108,7 +108,7 @@ h5 {
     padding: 1.2em;
     margin-bottom: 1em;
     box-shadow: 0 0 10px 0px #bfbebe;
-    
+    border: 2px solid black;
 }
 
 .role-head {
@@ -121,7 +121,7 @@ h5 {
     display: block;
     margin: auto;
     filter: drop-shadow(3px 4px 1px #bbab90);
-    box-shadow: inset 0px 0px 4px 2px #9f9dff;
+    box-shadow: inset 0px 0px 4px 3px #9f9dff;
     padding: .8em;
     border-radius: 12px;
     background-color: #9f9dff26;
@@ -150,7 +150,7 @@ h5 {
 }
 
 .role-title:hover {
-    background-color: #E8D5B5;
+    background-color: #9F9DFF;
     transition: .6s ease-in-out;
 }
 
@@ -160,10 +160,12 @@ h5 {
     padding: .7em;
     border-radius: 4px;
     margin-bottom: 1em;
-    box-shadow: 0px 0px 4px 2px #dad6bf;
-    background-color: #9F9DFF;
+    box-shadow: inset 0px 0px 4px 2px #9f9dff;
+    background-color: #9f9dff63;
     text-transform: uppercase;
     letter-spacing: .5pt;
+    border: 2px solid black;
+    color: black;
 }
 
 .role-desc {
@@ -309,6 +311,14 @@ small {
     text-transform: uppercase;
 }
 
+.role-subtitle {
+    margin-top: -2em;
+    text-align: right;
+    margin-bottom: 1em;
+    width: 95%;
+    font-size: 1.2em;
+}
+
 /* ======== WHY SECTION ======== */
 
 .container-why {
@@ -317,6 +327,10 @@ small {
     justify-content: center;
     align-items: center;
 
+}
+
+.why-text {
+    display: none;
 }
 
 .container-why .why-card {
@@ -382,7 +396,10 @@ small {
     filter: drop-shadow(2px 2px 1px #bbab90);
     border: none;
     margin: 0;
-    
+}
+
+.btn-up:hover {
+    cursor: pointer;
 }
 
 /* ===== COLORS ====== */
@@ -396,7 +413,7 @@ small {
 }
 
 .light {
-    color: #fffade85;
+    color: #fffade4a;
 }
 
 .wh {
@@ -411,8 +428,12 @@ small {
     background-color: #575491;
 }
 
+.bkg-light-blue {
+    background-color: #9f9dff00;
+}
+
 .bkg-light {
-    background-color: #fffade85;
+    background-color: #fffade4a;
 }
 
 .bkg-wh {
@@ -525,6 +546,36 @@ footer {
         margin-top: 1em;
         margin-bottom: 1em;
     }
+
+    .container-why {
+        flex-direction: row;
+        width: 90%;
+        margin: auto;
+        margin-bottom: 2em;
+    }
+
+    .container-why .why-card {
+        width: 40%;
+        margin: auto;
+    }
+
+    .why-text {
+        display: flex;
+        flex-direction: column;
+        width: 45%;
+        margin: auto;
+    }
+
+    .why-p {
+       
+    }
+
+    .why-list-item {
+        list-style: none;
+    }
+
+    .why-list-item::before {
+        content: "👉";
 }
 
 @media only screen and (min-width: 1025px) {
