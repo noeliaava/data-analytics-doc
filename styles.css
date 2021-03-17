@@ -3,6 +3,18 @@
     padding: 0;
 }
 
+/* ANIMATIONS */
+
+@keyframes side {
+    0% {
+        right: 0;
+    }
+    100% {
+        right: 5px;
+    }
+}
+
+
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
@@ -150,7 +162,7 @@ h5 {
 }
 
 .role-title:hover {
-    background-color: #9F9DFF;
+    background-color: #a4a2f7b3;
     transition: .6s ease-in-out;
 }
 
@@ -166,6 +178,7 @@ h5 {
     letter-spacing: .5pt;
     border: 2px solid #575491;
     color: black;
+    filter: drop-shadow(1px 1px 0px #bbab90);
 }
 
 .role-desc {
@@ -176,8 +189,19 @@ h5 {
 /* =========== funciones en detalle =========== */
 
 .role-t {
-    
+    text-transform: uppercase;
     text-align: center;
+    
+}
+
+#role-t::before {
+    content: "👉";
+    position:relative;
+    animation-name: side;
+    animation-iteration-count: infinite;
+    animation-duration: 1.5s; 
+    animation-timing-function: ease-out; 
+    animation-delay: 0s;
 }
 
 .function {
@@ -202,6 +226,7 @@ h5 {
     margin: auto;
     text-transform: uppercase;
     border-radius: 4px;
+    box-shadow: 0px 0px 4px 2px #dad6bf;
 }
 
 .fn-left {
@@ -270,6 +295,8 @@ small {
 
 .btn-how:hover {
     cursor: pointer;
+    background-color: #a4a2f7b3;
+    transition: .6s ease-in-out;
 }
 
 /* ======== HOW TO BECOME ======== */
@@ -288,10 +315,10 @@ small {
     justify-content: center;
     margin: 1em;
     border-radius: 8px;
-    filter: drop-shadow(3px 4px 1px #bbab90);
+    filter: drop-shadow(2px 2px 1px #bbab90);
     box-shadow: inset 0px 0px 4px 2px #9f9dff;
     border: 2px solid #9f9dff;
-    background-color: #9f9dff63;
+    background-color: #9f9dff21;
     width: 200px;
     height: 150px;
 }
@@ -313,11 +340,14 @@ small {
     text-transform: uppercase;
 }
 
+.card-how .link:hover {
+    filter: drop-shadow(1px 1px 0px #bbab90);
+    background-color: #9f9dff63;    
+}
+
 .role-subtitle {
-    margin-top: -2em;
-    text-align: right;
-    margin-bottom: 1em;
-    width: 95%;
+    margin-top: -1em;
+    text-align: center;
     font-size: 1.2em;
 }
 
@@ -328,7 +358,7 @@ small {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
+    margin-top: 1em;
 }
 
 .why-text {
@@ -374,6 +404,11 @@ small {
     text-align: center;
     font-weight: 500;
     text-transform: uppercase;
+}
+
+.cursors-container .link:hover {
+    background-color: #9f9dff63;
+    transition: .3s ease-in-out;
 }
 
 /* ======== BOTON ARRIBA ======== */
@@ -525,6 +560,7 @@ footer {
 
     .role-t {
         text-align: left;
+        
     }
 
     .two {
@@ -558,6 +594,7 @@ footer {
         width: 90%;
         margin: auto;
         margin-bottom: 2em;
+        margin-top: 1em;
     }
 
     .container-why .why-card {
@@ -585,6 +622,10 @@ footer {
 }
 
 @media only screen and (min-width: 1025px) {
+    .title-container {
+        padding-top: 5em;
+    }
+    
     .card-container {
         height: 120vh;
     }
@@ -600,11 +641,15 @@ footer {
     }
 
     .role-title {
-        font-size: 22px;
+        font-size: 24px;
     }
 
     .role-desc {
         font-size: 18px;
+    }
+
+    .container-how {
+        height: 55vh;
     }
     
 
