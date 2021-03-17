@@ -386,7 +386,7 @@ small {
 .cursors-container {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
     width: 80%;
     margin: auto;
@@ -398,7 +398,7 @@ small {
     box-shadow: inset 0px 0px 4px 2px #575491;
     border-radius: 6px;
     padding: .5em .6em;
-    width: 40%;
+    width: 35%;
     text-decoration: none;
     color: black;
     text-align: center;
@@ -519,10 +519,6 @@ footer {
         flex-wrap: wrap;
     }
 
-    .cursors-container .link {
-        padding: .8em .6em;
-    }
-
     .role-t {
         /* width: 80%; */
     }
@@ -547,6 +543,9 @@ footer {
         display: none;
     }
 
+    .title-container {
+        padding-top: 6em;
+    }
     .card-container {
         flex-direction: row;
         height: 105vh;
@@ -619,6 +618,10 @@ footer {
 
     .why-list-item::before {
         content: "👉";
+    }
+
+    .cursors-container {
+        width: 85%;
 }
 
 @media only screen and (min-width: 1025px) {
@@ -651,7 +654,12 @@ footer {
     .container-how {
         height: 55vh;
     }
-    
+    .container-why .why-card {
+        width: 30%;
+    }
+
+    .why-text {
+        width: 50%;
 
 }
 
