@@ -176,7 +176,7 @@ h5 {
 /* =========== funciones en detalle =========== */
 
 .role-t {
-    width: 90%;
+    
     text-align: center;
 }
 
@@ -188,22 +188,20 @@ h5 {
     width: 90%;
     margin: auto;
     margin-bottom: 1em;
-    box-shadow: inset 0px -2px 4px 2px #9f9dff;
     padding: 2em .8em 1em .8em;
 }
 
 .function-title {
-    background-color: #9f9dff;
-    border: 8px solid #9f9dff;
-    box-shadow: 0px -1px 3px 2px #9f9dff;
-    color: white;
+    background-color: #9f9dff63;
+    color: black;
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    padding-right: .3em;
+    padding: .5em;
     width: 90%;
     margin: auto;
     text-transform: uppercase;
+    border-radius: 4px;
 }
 
 .fn-left {
@@ -268,6 +266,10 @@ small {
     border: none;
     font-size: 1.3em;
     font-weight: 600;
+}
+
+.btn-how:hover {
+    cursor: pointer;
 }
 
 /* ======== HOW TO BECOME ======== */
@@ -484,6 +486,10 @@ footer {
 
     .cursors-container .link {
         padding: .8em .6em;
+    }
+
+    .role-t {
+        /* width: 80%; */
     }
 }
 
