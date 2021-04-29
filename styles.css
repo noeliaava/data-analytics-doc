@@ -396,6 +396,15 @@ small {
 
 }
 
+.why-p {
+    text-align: justify;
+    line-height: 1.3;
+}
+
+.why-list {
+    line-height: 1.5;
+}
+
 .cursors-container {
     display: flex;
     flex-direction: row;
@@ -673,7 +682,7 @@ footer {
 
     .why-text {
         width: 50%;
-
+    }
 }
 
 @media only screen and (min-width: 1332px) {
