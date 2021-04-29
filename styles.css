@@ -333,8 +333,8 @@ small {
     box-shadow: inset 0px 0px 4px 2px #9f9dff;
     border: 2px solid #9f9dff;
     background-color: #9f9dff21;
-    width: 200px;
-    height: 150px;
+    width: 300px;
+    height: 200px;
 }
 
 .card-how .title {
@@ -665,7 +665,7 @@ footer {
     }
 
     .container-how {
-        height: 55vh;
+        height: 70vh;
     }
     .container-why .why-card {
         width: 30%;
